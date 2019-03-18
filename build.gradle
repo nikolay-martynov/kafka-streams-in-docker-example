@@ -14,7 +14,9 @@ allprojects {
 }
 
 plantUml {
+    render input: 'diagrams/case.puml', output: 'diagrams/case.svg'
     render input: 'diagrams/deployment.puml', output: 'diagrams/deployment.svg'
+    render input: 'diagrams/communication.puml', output: 'diagrams/communication.svg'
 }
 
 task build {

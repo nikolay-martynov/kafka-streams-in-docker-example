@@ -1,0 +1,16 @@
+@startuml
+
+database Kafka {
+queue Source
+queue Target
+}
+component Producer
+component Transformer
+component Consumer
+
+Producer -> Source
+Source -> Transformer
+Transformer -> Target
+Target -> Consumer
+
+@enduml

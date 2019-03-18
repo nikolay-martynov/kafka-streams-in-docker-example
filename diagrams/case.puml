@@ -1,0 +1,18 @@
+@startuml
+
+queue Kafka
+
+component Product1
+note right of Product1
+    JSON
+end note
+
+component Product2
+note left of Product2
+    XML
+end note
+
+Product1 -> Kafka
+Kafka -> Product2
+
+@enduml
