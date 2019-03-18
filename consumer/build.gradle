@@ -33,9 +33,9 @@ configurations.configureEach {
     }
 }
 
-mainClassName = 'com.github.nikolay_martynov.kafka_in_docker.consumer.ExampleConsumer'
+mainClassName = 'example.ExampleConsumer'
 docker {
-    name 'com.github/nikolay_martynov/kafka_in_docker.consumer'
+    name 'example/kafka_in_docker.consumer'
     files tasks.distTar.outputs
 }
 tasks.named("build").configure {Task it->

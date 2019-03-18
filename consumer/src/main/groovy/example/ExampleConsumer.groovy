@@ -1,4 +1,4 @@
-package com.github.nikolay_martynov.kafka_in_docker.consumer
+package example
 
 import groovy.cli.commons.CliBuilder
 import groovy.cli.commons.OptionAccessor

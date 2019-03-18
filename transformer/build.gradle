@@ -34,9 +34,9 @@ configurations.configureEach {
     }
 }
 
-mainClassName = 'com.github.nikolay_martynov.kafka_in_docker.transformer.ExampleTransformer'
+mainClassName = 'example.ExampleTransformer'
 docker {
-    name 'com.github/nikolay_martynov/kafka_in_docker.transformer'
+    name 'example/kafka_in_docker.transformer'
     files tasks.distTar.outputs
 }
 tasks.named("build").configure {Task it->

@@ -1,4 +1,4 @@
-package com.github.nikolay_martynov.kafka_in_docker.transformer
+package example
 
 import groovy.cli.commons.CliBuilder
 import groovy.cli.commons.OptionAccessor
@@ -11,12 +11,14 @@ import org.apache.kafka.streams.StreamsBuilder
 import org.apache.kafka.streams.StreamsConfig
 import org.apache.kafka.streams.Topology
 import org.apache.kafka.streams.kstream.ValueMapper
+import org.slf4j.LoggerFactory
 
 import java.util.concurrent.CountDownLatch
 
 class ExampleTransformer {
 
     static List<String> toXml(String json) {
+        LoggerFactory.getLogger(ExampleTransformer).info("Translating $json")
         JsonSlurper slurper = new JsonSlurper()
         Map<String, ?> record = slurper.parseText(json) as Map
         Writer writer = new StringWriter()

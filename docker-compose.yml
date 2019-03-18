@@ -14,8 +14,8 @@ services:
       - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
       - ALLOW_PLAINTEXT_LISTENER=yes
   producer:
-    image: 'com.github/nikolay_martynov/kafka_in_docker.producer'
+    image: 'example/kafka_in_docker.producer'
   consumer:
-    image: 'com.github/nikolay_martynov/kafka_in_docker.consumer'
+    image: 'example/kafka_in_docker.consumer'
   transformer:
-    image: 'com.github/nikolay_martynov/kafka_in_docker.transformer'
+    image: 'example/kafka_in_docker.transformer'
