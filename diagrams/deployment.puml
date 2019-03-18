@@ -1,0 +1,19 @@
+@startuml
+
+rectangle "Docker container 1" {
+    component ZooKeeper
+}
+rectangle "Docker container 2" {
+    queue Kafka
+}
+rectangle "Docker container 3" {
+    component Producer
+}
+rectangle "Docker container 4" {
+    component Transformer
+}
+rectangle "Docker container 5" {
+    component Consumer
+}
+
+@enduml
