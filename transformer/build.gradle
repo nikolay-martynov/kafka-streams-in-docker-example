@@ -1,0 +1,12 @@
+plugins {
+    id 'groovy'
+    id 'application'
+    id 'ru.vyarus.quality' version '3.4.0'
+    id "com.github.ben-manes.versions" version "0.21.0"
+}
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:2.5.4'
+    implementation 'org.apache.kafka:kafka-streams:2.1.0'
+    testImplementation 'org.spockframework:spock-core:1.2-groovy-2.5'
+}
+mainClassName = 'example.App'
