@@ -17,3 +17,5 @@ services:
     image: 'com.github/nikolay_martynov/kafka_in_docker.producer'
   consumer:
     image: 'com.github/nikolay_martynov/kafka_in_docker.consumer'
+  transformer:
+    image: 'com.github/nikolay_martynov/kafka_in_docker.transformer'
